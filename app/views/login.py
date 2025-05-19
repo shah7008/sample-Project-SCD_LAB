@@ -99,6 +99,7 @@ class LoginView(tk.Frame):
             if self.auth_service.authenticate(username, password):
                 self.controller.show_view("DashboardView")
             else:
+
                 messagebox.showerror("Error", "Invalid username or password")
         except Exception as e:
             messagebox.showerror("Error", f"An error occurred: {str(e)}")

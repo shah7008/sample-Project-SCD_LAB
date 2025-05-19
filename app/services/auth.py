@@ -32,4 +32,5 @@ class AuthService:
         Returns:
             bool: True if authentication succeeds, False otherwise.
         """
+
         return self.valid_users.get(username) == password
